@@ -96,8 +96,7 @@ router.get('/personalData', function(req, res, next) {
 /* userInfo */
 router.get('/userInfo', function(req, res, next) {
   
-    var data = [
-      {
+    var data = {
         userId: "0141953",
         userName: "陈涛",
         department: "深圳总部",
@@ -109,8 +108,7 @@ router.get('/userInfo', function(req, res, next) {
         learnNum: "10",
         telPhone: "13399999999",
         region: "广州地区直辖"
-      }
-    ];
+      };
   
     var response = {
       isSuccess:true,
