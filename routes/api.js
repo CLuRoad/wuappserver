@@ -35,8 +35,7 @@ router.get('/marketIntelligent', function(req, res, next) {
         item.userName = names[parseInt(Math.random()*46)];
         rows.push(item);
     }
-    var data = [
-      {
+    var data = {
         mine: {
           money: 20000,
           orderNumber: 10,
@@ -45,8 +44,7 @@ router.get('/marketIntelligent', function(req, res, next) {
           rankIndex: 1
         },
         rows: rows
-      }
-    ];
+      };
   
     var response = {
       isSuccess:true,
