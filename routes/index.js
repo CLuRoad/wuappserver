@@ -28,11 +28,11 @@ router.get('/marketIntelligent', function(req, res, next) {
     var names = ["靳东", "贺涵", "马伊琍", "罗子君", "袁泉", "唐晶", "雷佳音", "陈俊生 ", "吴越", "凌玲", "许娣", "薛甄珠", "张龄心", "罗子群", "邬君梅", "吴大娘", "栾元晖", "白光", "郑罗茜", "薇薇安", "啜妮", "洛洛", "梅婷", "卓渐清前女友", "谭凯", "Adom", "孔维", "单身女人", "张棪琰", "苏曼殊", "侯岩松", "老金", "魏之皓", "平儿", "王天泽", "冷佳清", "于明加", "安琪儿CEO", "任东霖", "李睿", "张衣", "罗平", "黄澜", "M女士", "陈道明", "卓渐清"];
     for (var i = 0; i< 10; i++){
         var item = {};
-        item.money = Math.random()*9999 + 10000;
-        item.orderNumber = Math.random()*100;
+        item.money = parseInt(Math.random()*9999 + 10000);
+        item.orderNumber = parseInt(Math.random()*100);
         item.rankIndex = i+1;
-        item.userId = '014'+ (Math.random()*999 + 1000).toString();
-        item.userName = names[Math.random()*46];
+        item.userId = '014'+ (parseInt(Math.random()*999 + 1000)).toString();
+        item.userName = names[parseInt(Math.random()*46)];
         rows.push(item);
     }
     var data = [
