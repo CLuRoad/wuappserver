@@ -15,11 +15,11 @@
 * 提供主工程的推送证书(VoIP)及密码（格式：.p12）
 * 提供主工程和四个扩展工程的描述文件（格式：.mobileprovision），步骤如下：
 	* 新建一个App Groups：group.xxx.yzj (xxx最好是客户的简写)
-	* 新建5个App IDs，*注意：5个App IDs在App Service处勾选App Groups选项；主工程App ID还需勾选Associated Domains和Push Notifications，其它4个不用*
+	* 新建5个App IDs，**注意：5个App IDs在App Service处勾选App Groups选项；主工程App ID还需勾选Associated Domains和Push Notifications，其它4个不用**
 		* 主工程：com.xxx.yzj
 		* 分享扩展：com.xxx.yzj.extension
 		* 快捷操作Widget扩展：com.xxx.yzj.widget
 		* 消息Widget扩展：com.xxx.yzj.messagewidget
 		* 来电智能识别扩展：com.xxx.yzj.callextension
-	* *将5个App IDs关联到第一步中的App Groups上*
+	* **将5个App IDs关联到第一步中的App Groups上**
 ---
